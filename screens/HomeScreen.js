@@ -21,7 +21,7 @@ const HomeScreen = () => {
       resizeMode="cover"
     >
       <View style={styles.container}>
-        <Text style={styles.title}>Location de voitures</Text>
+        <Text style={styles.title}>Agences de location de voitures</Text>
         <Image
           source={{
             uri: 'https://i.ytimg.com/vi/xdct9lGOl_U/maxresdefault.jpg',
@@ -29,14 +29,13 @@ const HomeScreen = () => {
           style={styles.image}
         />
         <Text style={styles.description}>
-          Trouvez la voiture parfaite pour votre prochain voyage. Découvrez notre
-          sélection de voitures de luxe, de sport et d'économie.
+          Trouvez l'agence de location de voitures idéale pour votre prochain voyage. Découvrez les meilleures offres et les agences les plus réputées.
         </Text>
         <TouchableOpacity
           style={styles.button}
           onPress={() => navigation.navigate('SearchScreen')}
         >
-          <Text style={styles.buttonText}>Rechercher une voiture</Text>
+          <Text style={styles.buttonText}>Rechercher une agence</Text>
         </TouchableOpacity>
       </View>
     </ImageBackground>

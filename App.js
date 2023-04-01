@@ -26,11 +26,15 @@ function MyTab() {
 
           return <Ionicons name={iconName} size={size} color={color} />;
         },
+        tabBarActiveTintColor: '#3a86ff',
+        tabBarInactiveTintColor: 'gray',
+        tabBarStyle: [
+          {
+            display: 'flex',
+          },
+          null,
+        ],
       })}
-      tabBarOptions={{
-        activeTintColor: 'tomato',
-        inactiveTintColor: 'gray',
-      }}
     >
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="Settings" component={SettingsScreen} />
