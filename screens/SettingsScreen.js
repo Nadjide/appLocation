@@ -1,7 +1,10 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+
 
 const SettingsScreen = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Paramètres</Text>
@@ -17,10 +20,19 @@ const SettingsScreen = () => {
         <TouchableOpacity style={styles.item}>
           <Text style={styles.itemText}>Langue</Text>
         </TouchableOpacity>
+        <TouchableOpacity style={styles.item}>
+          <Text style={styles.itemText}>Aide</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.item}>
+          <Text style={styles.itemText}>A propos</Text>
+        </TouchableOpacity>
       </View>
 
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>Compte</Text>
+        <TouchableOpacity style={styles.item}>
+          <Text style={styles.itemText}>Mes locations</Text>
+        </TouchableOpacity>
         <TouchableOpacity style={styles.item}>
           <Text style={styles.itemText}>Modifier le profil</Text>
         </TouchableOpacity>

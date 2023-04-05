@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   Image,
   ImageBackground,
+  TextInput,
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
@@ -22,6 +23,11 @@ const HomeScreen = () => {
     >
       <View style={styles.container}>
         <Text style={styles.title}>Agences de location de voitures</Text>
+        <TextInput
+          style={styles.searchInput}
+          placeholder="Rechercher une agence"
+          placeholderTextColor="#999"
+        />
         <Image
           source={{
             uri: 'https://i.ytimg.com/vi/xdct9lGOl_U/maxresdefault.jpg',
@@ -31,12 +37,6 @@ const HomeScreen = () => {
         <Text style={styles.description}>
           Trouvez l'agence de location de voitures idéale pour votre prochain voyage. Découvrez les meilleures offres et les agences les plus réputées.
         </Text>
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => navigation.navigate('SearchScreen')}
-        >
-          <Text style={styles.buttonText}>Rechercher une agence</Text>
-        </TouchableOpacity>
       </View>
     </ImageBackground>
   );
@@ -60,6 +60,16 @@ const styles = StyleSheet.create({
     color: '#ffffff',
     marginBottom: 20,
   },
+  searchInput: {
+    width: '80%',
+    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+    borderRadius: 25,
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    fontSize: 16,
+    color: '#333',
+    marginBottom: 20,
+  },
   image: {
     width: 150,
     height: 150,
@@ -71,16 +81,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     paddingHorizontal: 30,
     marginBottom: 20,
-    color: '#ffffff',
-  },
-  button: {
-    backgroundColor: '#4287f5',
-    paddingHorizontal: 20,
-    paddingVertical: 10,
-    borderRadius: 5,
-  },
-  buttonText: {
-    fontSize: 18,
     color: '#ffffff',
   },
 });
