@@ -4,6 +4,7 @@ import { useNavigation } from "@react-navigation/native";
 
 const SettingsScreen = () => {
   const navigation = useNavigation();
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Paramètres</Text>

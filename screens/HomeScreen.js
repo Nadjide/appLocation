@@ -145,7 +145,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   locationButton: {
-    backgroundColor: "#1E90FF",
+    backgroundColor: "#ffffff",
     borderRadius: 25,
     paddingHorizontal: 20,
     paddingVertical: 10,
@@ -155,7 +155,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "bold",
     textAlign: "center",
-    color: "#ffffff",
+    color: "#000000",
   },
   categoryTitle: {
     fontSize: 22,
@@ -174,7 +174,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   categoryButton: {
-    backgroundColor: "#1E90FF",
+    backgroundColor: "#ffffff",
     borderRadius: 25,
     paddingHorizontal: 20,
     paddingVertical: 10,
@@ -183,7 +183,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "bold",
     textAlign: "center",
-    color: "#ffffff",
+    color: "#000000",
   },
 });
 
